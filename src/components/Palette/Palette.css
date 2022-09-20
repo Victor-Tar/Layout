@@ -1,0 +1,111 @@
+.palette {
+    width: 100%;
+}
+
+.palette hr {
+    width: 100%;
+    height: 1px;
+    background-color: #D9DCE1;
+    margin-bottom: 31px;
+}
+
+.palette_subtitle {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #424A5C;
+    margin-bottom: 15px;
+}
+
+.palette_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 19px;
+    margin-bottom: 40px;
+}
+
+.palette_item {
+    width: 94px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 6px;
+    outline: 2px solid #D9DCE1;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.palette_color {
+    width: 74px;
+    height: 37px;
+    border-radius: 6px;
+}
+
+.palette_item.active {
+    outline-color: #5D82D5;
+    position: relative;
+}
+
+.palette_item.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../../assets/Done.svg');
+    top: -12px;
+    right: -12px;
+    width: 26px;
+    height: 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.palette_switcher {
+    width: 100%;
+    display: flex;
+    gap: 19px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.palette_switcher button {
+    flex-shrink: 1;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../../assets/ArrowOutline.svg');
+    background-position: center;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.palette_chosenColor {
+   flex-grow: 1;
+}
+
+.switcher_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid #D9DCE1;
+    border-radius: 6px;
+    padding: 15px 13px 15px 24px;
+}
+
+.switcher_title {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #1E1D20;
+    margin-bottom: 6px;
+}
+
+.colorRound {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+}
